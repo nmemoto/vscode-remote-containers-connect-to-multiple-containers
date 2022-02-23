@@ -1,0 +1,16 @@
+{
+    "name": "python-workspace",
+    "dockerComposeFile": ["../../docker-compose.yml"],
+    "service": "python",
+    "shutdownAction": "none",
+    "settings": {
+      "python.pythonPath": "/usr/local/bin/python",
+      "python.linting.enabled": false,
+      "jupyter.jupyterServerType": "local"
+    },
+    "extensions": ["ms-python.python"],
+    "postStartCommand": "pip install -r .devcontainer/requirements.txt",
+    "remoteUser": "vscode",
+    "workspaceFolder": "/workspace/python-workspace"
+  }
+  

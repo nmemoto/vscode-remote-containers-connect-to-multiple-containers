@@ -1,0 +1,15 @@
+{
+    "name": "go-workspace",
+    "dockerComposeFile": ["../../docker-compose.yml"],
+    "service": "go",
+    "shutdownAction": "none",
+    "extensions": ["golang.go"],
+    "remoteUser": "vscode",
+    "settings": {
+      "go.toolsManagement.checkForUpdates": "local",
+      "go.useLanguageServer": true,
+      "go.gopath": "/go",
+      "go.goroot": "/usr/local/go"
+    },
+    "workspaceFolder": "/workspace/go-workspace"
+  }
